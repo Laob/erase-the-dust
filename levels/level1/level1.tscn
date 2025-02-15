@@ -43,6 +43,66 @@ position = Vector2(572, 326)
 [node name="Dirt" parent="dirt" instance=ExtResource("4_5w46f")]
 position = Vector2(416, 210)
 
+[node name="Dirt11" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(373, 158)
+
+[node name="Dirt12" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(258, 146)
+
+[node name="Dirt13" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(233, 206)
+
+[node name="Dirt14" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(238, 286)
+
+[node name="Dirt15" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(221, 364)
+
+[node name="Dirt16" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(321, 381)
+
+[node name="Dirt17" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(348, 272)
+
+[node name="Dirt18" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(379, 79)
+
+[node name="Dirt19" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(313, 134)
+
+[node name="Dirt20" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(296, 258)
+
+[node name="Dirt21" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(163, 309)
+
+[node name="Dirt22" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(180, 192)
+
+[node name="Dirt23" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(241, 98)
+
+[node name="Dirt24" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(310, 429)
+
+[node name="Dirt25" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(186, 413)
+
+[node name="Dirt26" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(341, 327)
+
+[node name="Dirt27" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(389, 373)
+
+[node name="Dirt28" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(384, 255)
+
+[node name="Dirt29" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(354, 208)
+
+[node name="Dirt30" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(407, 145)
+
 [node name="Dirt2" parent="dirt" instance=ExtResource("4_5w46f")]
 position = Vector2(303, 206)
 
