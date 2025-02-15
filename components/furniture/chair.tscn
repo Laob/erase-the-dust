@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://vt01j7ok0nny"]
 
-[ext_resource type="Texture2D" uid="uid://duo1846iv8jto" path="res://assets/kenney/topdown/tilesheet_complete_2X.png" id="1_l46lw"]
+[ext_resource type="Texture2D" uid="uid://binia6g46do6n" path="res://assets/kenney/topdown/tilesheet_complete.png" id="1_8xkj0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e7gad"]
-atlas = ExtResource("1_l46lw")
-region = Rect2(2176, 2432, 128, 128)
+atlas = ExtResource("1_8xkj0")
+region = Rect2(1088, 1216, 64, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m3vf4"]
-size = Vector2(86, 79)
+size = Vector2(44, 40)
 
 [node name="Chair" type="RigidBody2D"]
 collision_layer = 8
@@ -17,5 +17,5 @@ collision_mask = 12
 texture = SubResource("AtlasTexture_e7gad")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.5)
+position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_m3vf4")
