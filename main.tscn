@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://sfle7ki2fyjg"]
+[gd_scene load_steps=4 format=3 uid="uid://sfle7ki2fyjg"]
 
 [ext_resource type="PackedScene" uid="uid://dfd6e1cxpumbx" path="res://player/player.tscn" id="1_4ddsm"]
 [ext_resource type="PackedScene" uid="uid://xj38ilcp2t11" path="res://levels/level1/level1.tscn" id="1_45uxq"]
+[ext_resource type="PackedScene" uid="uid://b0le1xdxjppse" path="res://components/vacuum/vacuum.tscn" id="3_25hpb"]
 
 [node name="main" type="Node2D"]
 
@@ -9,3 +10,6 @@
 
 [node name="Player" parent="." instance=ExtResource("1_4ddsm")]
 position = Vector2(355, 227)
+
+[node name="Vacuum" parent="Player" instance=ExtResource("3_25hpb")]
+position = Vector2(26, 6)

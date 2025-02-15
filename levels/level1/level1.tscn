@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://xj38ilcp2t11"]
+[gd_scene load_steps=5 format=4 uid="uid://xj38ilcp2t11"]
 
 [ext_resource type="TileSet" uid="uid://dv0jj0clpq0h" path="res://components/tilesets/kenney_topdown.tres" id="1_0v518"]
 [ext_resource type="PackedScene" uid="uid://vt01j7ok0nny" path="res://components/furniture/chair.tscn" id="2_42fq8"]
 [ext_resource type="PackedScene" uid="uid://c0vk6lk28r6t0" path="res://components/furniture/table.tscn" id="3_53qcy"]
+[ext_resource type="PackedScene" uid="uid://dlvbxy7v5nfpp" path="res://components/dirt/dirt.tscn" id="4_5w46f"]
 
 [node name="Level1" type="Node2D"]
 
@@ -36,3 +37,35 @@ rotation = -3.13513
 
 [node name="Table" parent="objects" instance=ExtResource("3_53qcy")]
 position = Vector2(572, 326)
+
+[node name="dirt" type="Node2D" parent="."]
+
+[node name="Dirt" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(416, 210)
+
+[node name="Dirt2" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(303, 206)
+
+[node name="Dirt3" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(290, 315)
+
+[node name="Dirt4" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(407, 321)
+
+[node name="Dirt5" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(197, 145)
+
+[node name="Dirt6" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(174, 247)
+
+[node name="Dirt7" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(154, 361)
+
+[node name="Dirt8" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(314, 83)
+
+[node name="Dirt9" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(260, 428)
+
+[node name="Dirt10" parent="dirt" instance=ExtResource("4_5w46f")]
+position = Vector2(375, 433)

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0le1xdxjppse"]
+
+[ext_resource type="Texture2D" uid="uid://dgsfrjg327k2v" path="res://assets/vinz/vacuum.png" id="1_f4kc7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t0xnp"]
+radius = 20.025
+
+[node name="Vacuum" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(20, 8)
+amount = 100
+emission_shape = 1
+emission_sphere_radius = 18.0
+gravity = Vector2(0, 0)
+angular_velocity_min = -10.0
+angular_velocity_max = -10.0
+
+[node name="Vacuum" type="Sprite2D" parent="."]
+position = Vector2(5, -10)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_f4kc7")
+
+[node name="Collection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collection"]
+position = Vector2(20, 8)
+shape = SubResource("CircleShape2D_t0xnp")
