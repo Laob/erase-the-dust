@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlvbxy7v5nfpp"]
+[gd_scene load_steps=4 format=3 uid="uid://dlvbxy7v5nfpp"]
 
 [ext_resource type="Texture2D" uid="uid://nfla3hcyu7fo" path="res://assets/vinz/dirt.png" id="1_3lrxt"]
+[ext_resource type="Script" path="res://components/dirt/dirt.gd" id="1_jp54e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_he5bp"]
-radius = 59.0339
+radius = 50.0
 
 [node name="Dirt" type="Area2D"]
 collision_layer = 2
 collision_mask = 16
+script = ExtResource("1_jp54e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4, 0)
@@ -16,3 +18,17 @@ shape = SubResource("CircleShape2D_he5bp")
 [node name="Dirt" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_3lrxt")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 24
+lifetime = 0.5
+one_shot = true
+explosiveness = 0.9
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 108.28
+initial_velocity_max = 159.24
+angular_velocity_min = 137.58
+angular_velocity_max = 137.58
+scale_amount_max = 3.0
