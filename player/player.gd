@@ -4,41 +4,29 @@ var direction: Vector2 = Vector2.ZERO
 
 @export var speed: int = 300
 @export var push_force: float = 10
+@export var mouse_movement: bool = false
 
 var rotation_speed = 1.5  # turning speed in radians/sec
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	pass
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)	
 
 func _physics_process(delta):
-	# _movement_v1()
-	# _movement_v2()
-	_movement_v3(delta)
-	pass
-		
-func _movement_v1():
-	direction = Vector2(
-		Input.get_axis("ui_left", "ui_right"),
-		Input.get_axis("ui_down", "ui_up")
-	)
-	direction.normalized()
-	velocity = direction * speed
-	handle_collision()
-	look_at(get_global_mouse_position())
-	move_and_slide()
+	if mouse_movement:
+		mouse_and_keyboard_movement()
+	else:
+		keyboard_only_movement(delta)	
 
-func _movement_v2():
+func mouse_and_keyboard_movement():
 	look_at(get_global_mouse_position())
 	var move_input = Input.get_axis("ui_down", "ui_up")
 	velocity = transform.x * move_input * speed
 	handle_collision()
 	move_and_slide()
 
-
-func _movement_v3(delta):
+func keyboard_only_movement(delta):
 
 	var move_input = Input.get_axis("ui_down", "ui_up")
 	velocity = transform.x * move_input * speed
