@@ -12,6 +12,7 @@ size = Vector2(191, 63)
 [node name="Table" type="RigidBody2D"]
 collision_layer = 8
 collision_mask = 12
+linear_damp = 2.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("AtlasTexture_e7gad")

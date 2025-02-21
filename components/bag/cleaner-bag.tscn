@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://f1a64r8ubmc"]
 
-[ext_resource type="Texture2D" uid="uid://db7nuqmh6oyeo" path="res://assets/lukas/cleaner-bag.png" id="1_u3kry"]
+[ext_resource type="Texture2D" uid="uid://db1ncuwsf2bdv" path="res://assets/lukas/cleaner-bag.png" id="1_u3kry"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m3vf4"]
 size = Vector2(44, 40)
@@ -8,6 +8,7 @@ size = Vector2(44, 40)
 [node name="Cleaner-Bag" type="RigidBody2D"]
 collision_layer = 8
 collision_mask = 12
+linear_damp = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_u3kry")

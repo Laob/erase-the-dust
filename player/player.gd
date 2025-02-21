@@ -42,4 +42,4 @@ func handle_collision():
 		var collision = get_slide_collision(index)
 		var collison_body = collision.get_collider()
 		if collison_body is RigidBody2D:			
-			collison_body.apply_central_impulse(-collision.get_normal() * push_force)
+			collison_body.apply_force(-collision.get_normal() * push_force)
