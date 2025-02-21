@@ -30,8 +30,7 @@ func _process(delta: float) -> void:
 		leave_cleaner_bag()
 
 # leave cleaner bag on floor and reset fill level
-func leave_cleaner_bag():
-	print(global_rotation)
+func leave_cleaner_bag():	
 	# the distance where the bag shall spawn
 	var distance = 80
 	cleaner_bag_leaved.emit(global_position - Vector2.RIGHT.rotated(global_rotation) * distance)
